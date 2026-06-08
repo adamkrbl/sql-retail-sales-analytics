@@ -15,7 +15,27 @@ VALUES
 ('Tomas', 'Urban', 'tomas.u@email.com', 'Bratislava', '2024-03-05'),
 ('Zuzana', 'Balazova', 'zuzana.b@email.com', 'Kosice', '2024-03-20'),
 ('Andrej', 'Klein', 'andrej.k@email.com', 'Nitra', '2024-04-01'),
-('Monika', 'Jurikova', 'monika.j@email.com', 'Zilina', '2024-04-12');
+('Monika', 'Jurikova', 'monika.j@email.com', 'Zilina', '2024-04-12'),
+('Michal','Bartos','michal.b@email.com','Bratislava','2024-01-20'),
+('Anna','Svecova','anna.s@email.com','Kosice','2024-01-25'),
+('Juraj','Toth','juraj.t@email.com','Nitra','2024-02-05'),
+('Simona','Kovacova','simona.k@email.com','Trencin','2024-02-08'),
+('Patrik','Maly','patrik.m@email.com','Presov','2024-02-12'),
+('Lenka','Hudecova','lenka.h@email.com','Zilina','2024-02-20'),
+('Roman','Pavlik','roman.p@email.com','Bratislava','2024-03-01'),
+('Natalia','Krizova','natalia.k@email.com','Kosice','2024-03-04'),
+('David','Mraz','david.m@email.com','Nitra','2024-03-10'),
+('Veronika','Liska','veronika.l@email.com','Zvolen','2024-03-15'),
+('Filip','Hlavac','filip.h@email.com','Poprad','2024-03-20'),
+('Kristina','Urbanova','kristina.u@email.com','Martin','2024-03-22'),
+('Miroslav','Bielik','miro.b@email.com','Trnava','2024-04-02'),
+('Barbora','Kralikova','barbora.k@email.com','Bratislava','2024-04-05'),
+('Jakub','Sabol','jakub.s@email.com','Kosice','2024-04-08'),
+('Dominika','Kleinova','dominika.k@email.com','Nitra','2024-04-10'),
+('Richard','Vasko','richard.v@email.com','Presov','2024-04-15'),
+('Nikola','Duricova','nikola.d@email.com','Zilina','2024-04-18'),
+('Samuel','Polak','samuel.p@email.com','Trencin','2024-04-20'),
+('Michaela','Jurikova','michaela.j@email.com','Bratislava','2024-04-25');
 
 INSERT INTO products (
     product_name,
@@ -37,7 +57,19 @@ VALUES
 
 ('Monitor 27"', 'Electronics', 299.99),
 ('Office Chair', 'Home', 199.99),
-('Fitness Tracker', 'Sports', 149.99);
+('Fitness Tracker', 'Sports', 149.99),
+
+('Smartphone X', 'Electronics', 899.99),
+('Tablet Air', 'Electronics', 549.99),
+('Bluetooth Speaker', 'Electronics', 79.99),
+
+('Electric Kettle', 'Home', 49.99),
+('Desk Lamp', 'Home', 39.99),
+('Bookshelf', 'Home', 129.99),
+
+('Exercise Bike', 'Sports', 499.99),
+('Resistance Bands', 'Sports', 19.99),
+('Protein Shaker', 'Sports', 14.99);
 
 INSERT INTO orders (
     customer_id,
