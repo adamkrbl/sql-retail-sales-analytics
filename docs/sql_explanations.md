@@ -227,3 +227,123 @@ Používame WITH na vytvorenie dočasného datasetu customer_revenue.
 #### ORDER BY
 
 Zoradí zákazníkov podľa lifetime value.
+
+# Q08 - Monthly Revenue Growth
+
+### Cieľ
+
+Porovnať vývoj tržieb medzi jednotlivými mesiacmi.
+
+### Použité SQL techniky
+
+#### CTE
+
+Najprv vytvárame agregované mesačné tržby.
+
+#### Window Function - LAG()
+
+Získava hodnotu tržieb z predchádzajúceho mesiaca.
+
+#### Growth Calculation
+
+Počíta percentuálnu zmenu oproti predchádzajúcemu mesiacu.
+
+#### ORDER BY
+
+Zabezpečuje správne chronologické poradie mesiacov.
+
+# Q09 - Running Revenue
+
+### Cieľ
+
+Zobraziť kumulatívny rast tržieb počas sledovaného obdobia.
+
+### Použité SQL techniky
+
+#### CTE
+
+Vytvára agregované mesačné tržby.
+
+#### Window Function - SUM() OVER()
+
+Počíta priebežný súčet tržieb.
+
+#### ORDER BY
+
+Zabezpečuje správne chronologické poradie mesiacov.
+
+### Business Value
+
+Umožňuje sledovať celkový rast tržieb v čase.
+
+# Q10 - Customer Order Frequency
+
+### Cieľ
+
+Zistiť, koľko objednávok vytvoril každý zákazník.
+
+### Použité SQL techniky
+
+#### COUNT(DISTINCT)
+
+Počíta unikátne objednávky zákazníka.
+
+#### JOIN
+
+Spájame customers, orders a order_items.
+
+#### GROUP BY
+
+Agreguje údaje na úroveň zákazníka.
+
+### Business Value
+
+Pomáha identifikovať verných a opakujúcich sa zákazníkov.
+
+# Q11 - Top Products by Category
+
+### Cieľ
+
+Identifikovať najvýkonnejšie produkty v rámci jednotlivých kategórií.
+
+### Použité SQL techniky
+
+#### CTE
+
+Pripravuje tržby produktov.
+
+#### RANK() OVER()
+
+Vytvára poradie produktov v rámci každej kategórie.
+
+#### PARTITION BY
+
+Rozdeľuje dáta podľa kategórie.
+
+### Business Value
+
+Pomáha identifikovať najúspešnejšie produkty v každej produktovej kategórii.
+
+# Q12 - Revenue Share by Category
+
+### Cieľ
+
+Vypočítať percentuálny podiel jednotlivých kategórií na celkových tržbách.
+
+### Použité SQL techniky
+
+#### CTE
+
+Pripravuje agregované tržby podľa kategórií.
+
+#### SUM() OVER()
+
+Počíta celkové tržby naprieč všetkými kategóriami.
+
+#### Percentuálny podiel
+
+Počíta podiel kategórie na celkových tržbách.
+
+### Business Value
+
+Pomáha identifikovať najdôležitejšie kategórie z pohľadu tržieb.
