@@ -47,6 +47,23 @@ The project demonstrates practical SQL skills frequently required for Data Analy
 
 ---
 
+## Power BI Dashboard
+
+### Revenue Overview
+
+![Revenue Overview](images/revenue_overview.png)
+
+
+### Customer Analysis
+
+![Customer Analysis](images/customer_analysis.png)
+
+
+### Product Analysis
+
+![Product Analysis](images/product_analysis.png)
+
+
 ## SQL Concepts Demonstrated
 
 * SELECT
